@@ -32,12 +32,12 @@ jobs:
          skopeo copy docker://docker.io/grafana/promtail:2.9.2 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/promtail:2.9.2
          skopeo copy docker://docker.io/grafana/grafana:latest docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/grafana:latest
          skopeo copy docker://docker.io/k8sminikube/storage-provisioner:v1.8.1  docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/storage-provisioner:v1.8.1
-         skopeo copy docker://docker.io/registry.k8s.io/etcd:3.5.6-0 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/etcd:3.5.6-0
-         skopeo copy docker://docker.io/registry.k8s.io/kube-scheduler:v1.26.1 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/kube-scheduler:v1.26.1
-         skopeo copy docker://docker.io/registry.k8s.io/kube-controller-manager:v1.26.1 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/kube-controller-manager:v1.26.1
-         skopeo copy docker://docker.io/registry.k8s.io/coredns/coredns:v1.9.3 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/coredns:v1.9.3
+         skopeo copy docker://docker.io/cnagent/etcd:3.5.6-0  docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/etcd:3.5.6-0
+         skopeo copy docker://docker.io/cnplat/kube-scheduler:v1.22.7  docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/kube-scheduler:v1.22.7
+         skopeo copy docker://docker.io/cnplat/kube-controller-manager:v1.21.10 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/kube-controller-manager:v1.21.10
+         skopeo copy docker://docker.io/coredns/coredns:1.11.3 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/coredns:1.11.3
          skopeo copy docker://docker.io/registry.k8s.io/pause:3.9 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/pause:3.9
-         skopeo copy docker://docker.io/registry.k8s.io/kube-proxy:v1.26.1 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/kube-proxy:v1.26.1
-         skopeo copy docker://docker.io/registry.k8s.io/kube-apiserver:v1.26.1 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/kube-apiserver:v1.26.1
+         skopeo copy docker://docker.io/rancher/kube-proxy:v1.18.8  docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/kube-proxy:v1.18.8
+         skopeo copy docker://docker.io/rancher/kube-apiserver:v1.2.0-alpha.8-rancher-3 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/kube-apiserver:v1.2.0-alpha.8-rancher-3
          skopeo copy docker://docker.io/java:openjdk-8 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/java:openjdk-8
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
