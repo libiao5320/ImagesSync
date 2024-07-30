@@ -31,4 +31,5 @@ jobs:
          skopeo copy docker://docker.io/grafana/loki:2.9.2 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/loki:2.9.2
          skopeo copy docker://docker.io/grafana/promtail:2.9.2 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/promtail:2.9.2
          skopeo copy docker://docker.io/grafana/grafana:latest docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/grafana:latest
+         skopeo copy docker://docker.io/java:openjdk-8 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/java:openjdk-8
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
