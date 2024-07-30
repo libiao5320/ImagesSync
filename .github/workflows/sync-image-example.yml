@@ -36,7 +36,7 @@ jobs:
          skopeo copy docker://docker.io/cnplat/kube-scheduler:v1.22.7  docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/kube-scheduler:v1.22.7
          skopeo copy docker://docker.io/cnplat/kube-controller-manager:v1.21.10 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/kube-controller-manager:v1.21.10
          skopeo copy docker://docker.io/coredns/coredns:1.11.3 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/coredns:1.11.3
-         skopeo copy docker://docker.io/registry.k8s.io/pause:3.9 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/pause:3.9
+         skopeo copy docker://docker.io/rancher/pause:3.6 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/pause:3.6
          skopeo copy docker://docker.io/rancher/kube-proxy:v1.18.8  docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/kube-proxy:v1.18.8
          skopeo copy docker://docker.io/rancher/kube-apiserver:v1.2.0-alpha.8-rancher-3 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/kube-apiserver:v1.2.0-alpha.8-rancher-3
          skopeo copy docker://docker.io/java:openjdk-8 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/java:openjdk-8
