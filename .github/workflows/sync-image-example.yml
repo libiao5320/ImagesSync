@@ -39,6 +39,6 @@ jobs:
          skopeo copy docker://docker.io/rancher/pause:3.6 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/pause:3.6
          skopeo copy docker://docker.io/rancher/kube-proxy:v1.18.8  docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/kube-proxy:v1.18.8
          skopeo copy docker://docker.io/rancher/kube-apiserver:v1.2.0-alpha.8-rancher-3 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/kube-apiserver:v1.2.0-alpha.8-rancher-3
-         skopeo copy docker://docker.io/flannel:v0.25.6 docker://registry.cn-h¡angzhou.aliyuncs.com/biaobiaobiao/flannel:v0.25.6
+         skopeo copy docker://docker.io/flannel:v0.25.6 docker://registry.cn-h¡angzhou.aliyuncs.com/biaobiaobiao/flannel
          
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
