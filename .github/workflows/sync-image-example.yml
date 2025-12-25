@@ -43,4 +43,6 @@ jobs:
          # skopeo copy docker://docker.io/nginx/nginx:alpine  docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/nginx:alpine
          skopeo copy docker://registry.k8s.io/ingress-nginx/controller:v1.11.3  docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/ingress-nginx-controller:v1.11.3
          skopeo copy docker://registry.k8s.io/ingress-nginx/kube-webhook-certgen:v1.4.4  docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/ingress-nginx-kube-webhook-certgen:v1.4.4
+         skopeo copy docker://registry.k8s.io/rancher/local-path-provisioner:v0.0.33 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/rancher-local-path-provisioner:v0.0.33
+         skopeo copy docker://registry.k8s.io/busybox docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/busybox
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
