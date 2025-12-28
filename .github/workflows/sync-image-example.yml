@@ -45,4 +45,12 @@ jobs:
          skopeo copy docker://registry.k8s.io/ingress-nginx/kube-webhook-certgen:v1.4.4  docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/ingress-nginx-kube-webhook-certgen:v1.4.4
          skopeo copy docker://docker.io/rancher/local-path-provisioner:v0.0.33 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/rancher-local-path-provisioner:v0.0.33
          skopeo copy docker://docker.io/busybox docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/busybox
+         skopeo copy docker://docker.io/goharbor/harbor-core:v2.14.1 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/harbor-core:v2.14.1
+         skopeo copy docker://docker.io/goharbor/harbor-jobservice:v2.14.1 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/harbor-jobservice:v2.14.1
+         skopeo copy docker://docker.io/goharbor/harbor-portal:v2.14.1 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/harbor-portal:v2.14.1
+         skopeo copy docker://docker.io/goharbor/registry-photon:v2.14.1 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/registry-photon:v2.14.1
+         skopeo copy docker://docker.io/goharbor/harbor-registryctl:v2.14.1 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/harbor-registryctl:v2.14.1
+         skopeo copy docker://docker.io/goharbor/harbor-db:v2.14.1 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/harbor-db:v2.14.1
+         skopeo copy docker://docker.io/goharbor/redis-photon:v2.14.1 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/redis-photon:v2.14.1
+         skopeo copy docker://docker.io/goharbor/trivy-adapter-photon:v2.14.1 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/trivy-adapter-photon:v2.14.1
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
