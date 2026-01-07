@@ -55,5 +55,5 @@ jobs:
          skopeo copy docker://docker.io/goharbor/trivy-adapter-photon:v2.14.1 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/trivy-adapter-photon:v2.14.1
          skopeo copy docker://docker.io/mysql:8.0.36 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/mysql:8.0.36
          skopeo copy docker://docker.io/openjdk:21-ea-21-jdk docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/jdk:21-ea-21-jdk
-         
+         skopeo copy docker://docker.io/redis:8.4.0 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/redis:8.4.0
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
