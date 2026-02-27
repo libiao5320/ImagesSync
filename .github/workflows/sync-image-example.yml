@@ -57,4 +57,10 @@ jobs:
          skopeo copy docker://docker.io/openjdk:21-ea-21-jdk docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/jdk:21-ea-21-jdk
          skopeo copy docker://docker.io/redis:8.4.0 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/redis:8.4.0
          skopeo copy docker://registry.aliyuncs.com/google_containers/kube-apiserver:v1.31.14 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/kube-apiserver:v1.31.14
+         skopeo copy docker://registry.aliyuncs.com/google_containers/kube-controller-manager:v1.31.14 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/kube-controller-manager:v1.31.14
+         skopeo copy docker://registry.aliyuncs.com/google_containers/kube-scheduler:v1.31.14 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/kube-scheduler:v1.31.14
+         skopeo copy docker://registry.aliyuncs.com/google_containers/kube-proxy:v1.31.14 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/kube-proxy:v1.31.14
+         skopeo copy docker://registry.aliyuncs.com/google_containers/pause:3.10 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/pause:3.10
+         skopeo copy docker://registry.aliyuncs.com/google_containers/etcd:3.5.24-0 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/etcd:3.5.24-0
+         skopeo copy docker://registry.k8s.io/coredns/coredns:v1.11.3 docker://registry.cn-hangzhou.aliyuncs.com/biaobiaobiao/coredns:v1.11.3
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
